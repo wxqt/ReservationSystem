@@ -160,8 +160,7 @@ void LoginWidget::createWidget()
     QDir dir;
     if (!dir.exists("./data"))
         {
-            bool res = dir.mkpath("./data");
-            qDebug() << "新建目录是否成功" << res;
+            dir.mkpath("./data");
         }
 }
 
